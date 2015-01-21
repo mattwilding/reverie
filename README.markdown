@@ -1,7 +1,9 @@
 SOME NOTES
 ==========
 In order to use this theme, you'll need to do the following:
+
 * load the database from trailbike.sql in this directory
+
 You'll also need the following plugins:
 *Advanced Custom Fields
 *Contact Form 7

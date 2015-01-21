@@ -43,12 +43,13 @@
 <header class="contain-to-grid">
 	<!-- Starting the Top-Bar -->
 	<div class="row padding-top-1 padding-bottom-1">
-		<div class="small-12 large-3 columns">
+		<div class="small-12 medium-3 large-3 columns text-center">
 			<div class="trailbike-header-logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/antigua-assets/tba-header-logo.png" alt="trail bike antigua logo" description="Trail Bike Antigua" />
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/antigua-assets/tba-header-logo.png" alt="trail bike antigua logo" description="Trail Bike Antigua" /> -->
+				<img data-interchange="[<?php echo get_template_directory_uri(); ?>/antigua-assets/tba-header-logo.png, (default)], [<?php echo get_template_directory_uri(); ?>/antigua-assets/tba-header-logo-sm.png, (small)]" alt="trail bike antigua logo" description="Trail Bike Antigua" />
 			</div>
 		</div>
-		<div class="small-12 large-9 columns text-right">
+		<div class="small-12 medium-9 large-9 columns">
 			<div class="trailbike-header-phone">
 				01234 567890
 			</div>
@@ -61,11 +62,11 @@
 <div class="row">
 	<nav class="top-bar" data-topbar>
 	    <ul class="title-area">
-	        <!-- <li class="name">
-	        	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-	        </li> -->
+	         <li class="name">
+	        	<!-- <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->
+	        </li>
 			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-			<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 	    </ul>
 	    <section class="top-bar-section">
 	    <?php
@@ -83,7 +84,39 @@
 	        ) );
 	    ?>
 	    </section>
-	</nav>
+	</nav> 
+	<!-- <nav class="top-bar" data-topbar>
+	    <ul class="title-area">
+	        <li class="name">
+	        	<!-- <h1><a href="http://themefortress.com/demo/" title="ThemeFortress Demo" rel="home">ThemeFortress Demo</a></h1>
+	        </li>
+			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	    </ul>
+	    <section class="top-bar-section">
+	    <ul class="left"><li class="divider"></li><li id="menu-item-59" class="menu-item menu-item-main-menu menu-item-about"><a  href="http://themefortress.com/demo/?page_id=54">About</a></li>
+<li class="divider"></li><li id="menu-item-60" class="menu-item menu-item-main-menu menu-item-news has-dropdown"><a  href="http://themefortress.com/demo/?page_id=26">News</a>
+	<ul class="dropdown">
+	<li id="menu-item-61" class="menu-item menu-item-main-menu menu-item-history"><a  href="http://themefortress.com/demo/?page_id=18">History</a></li>
+	<li id="menu-item-62" class="menu-item menu-item-main-menu menu-item-our-staff has-dropdown"><a  href="http://themefortress.com/demo/?page_id=15">Our Staff</a>
+	<ul class="dropdown">
+		<li id="menu-item-83" class="menu-item menu-item-main-menu menu-item-our-company"><a  href="http://themefortress.com/demo/?page_id=13">Our Company</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="divider"></li><li id="menu-item-65" class="menu-item menu-item-main-menu menu-item-support"><a  href="http://themefortress.com/demo/?page_id=20">Support</a></li>
+</ul>	    <ul class="right"><li class="divider"></li><li id="menu-item-74" class="menu-item menu-item-main-menu menu-item-made-with-love-in-reverie has-dropdown active"><a  href="http://themefortress.com/demo/">Made with Love in Reverie</a>
+	<ul class="dropdown">
+	<li id="menu-item-75" class="menu-item menu-item-main-menu menu-item-reverie-official-website"><a  href="http://themefortress.com/reverie/">Reverie Official Website</a></li>
+	<li id="menu-item-76" class="menu-item menu-item-main-menu menu-item-reverie-support-forum"><a  href="http://themefortress.com/forum/">Reverie Support Forum</a></li>
+	<li id="menu-item-77" class="menu-item menu-item-main-menu menu-item-reverie-github-repo"><a  href="https://github.com/milohuang/reverie/">Reverie Github Repo</a></li>
+	<li id="menu-item-78" class="menu-item menu-item-main-menu menu-item-zurb-foundation"><a  href="http://foundation.zurb.com/">ZURB Foundation</a></li>
+</ul>
+</li>
+</ul>	    </section>
+	</nav> -->
+	<!-- End of Top-Bar -->
 	<!-- End of Top-Bar -->
 </div>
 

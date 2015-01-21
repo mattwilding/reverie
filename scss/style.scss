@@ -385,25 +385,56 @@ $darkgrey : #585756;
 .padding-bottom-1{ padding-bottom: 1em; }
 .barry-padded{ padding: 1em 1em 0 1em; } 
 .barry-padded-sides{ padding: 0 1em 0 1em; } 
+.barry-padded-all{ padding: 1em; } 
 .bg-white { background-color: white; }
 .bg-grey { background: $grey; }
 .bg-green { background: $green; }
+.img-responsive { width:100%; }
 
-.overlay{
-	position: absolute;
-	top: 1rem;
-	left: 2rem;
-	height: 100%;
-	font-size: 1.5rem;
-	background-color: rgba(36,174,221,0.5);
-	color: white;
-}
-.overlay-content{
-	padding: 2rem;
-	overflow: hidden;
-	font-size: 2rem;
+@media #{$small-up}{
+	.overlay{
+		top: 0.5rem;
+		background-color: rgba(36,174,221,1);
+		color: white;
+	}
+	.overlay-content{
+		padding: 1rem;
+		overflow: hidden;
+		font-size: 1rem;
+	}
 }
 
+@media #{$medium-up}{
+	.overlay{
+		position: absolute;
+		top: 1rem;
+		left: 2rem;
+		height: 96%;
+		background-color: rgba(36,174,221,0.5);
+		color: white;
+	}
+	.overlay-content{
+		padding: 1rem;
+		overflow: hidden;
+		font-size: 1rem;
+	}
+}
+
+@media #{$large-up}{
+	.overlay{
+		position: absolute;
+		top: 1rem;
+		left: 2rem;
+		height: 97%;
+		background-color: rgba(36,174,221,0.5);
+		color: white;
+	}
+	.overlay-content{
+		padding: 2rem;
+		overflow: hidden;
+		font-size: 2rem;
+	}
+}
 body {
 	background-color:#fff;
 	background-image: url(../antigua-assets/bg-clouds.png);
@@ -417,40 +448,119 @@ body > header.contain-to-grid {
 .contain-to-grid {
 	background: white;
 }
-.trailbike-header-tagline {
-	margin-top: 2.2rem;
-	font-family: 'Raleway', sans-serif;
-	font-size: 2.5rem;
+
+@media #{$small-up} {
+	.trailbike-header-tagline {
+		text-align:center;
+		margin-top: 0.5rem;
+		font-family: 'Raleway', sans-serif;
+		font-size: 1rem;
+	}
+	.trailbike-header-phone {
+		text-align:center;
+		margin-top: 0.5rem;
+		font-family: 'Raleway', sans-serif;
+		font-size: 0.9rem;
+	}
 }
-.trailbike-header-phone {
-	margin-top: 2rem;
-	font-family: 'Raleway', sans-serif;
-	font-size: 2rem;
+
+@media #{$medium-up} {
+	.trailbike-header-tagline {
+		text-align:right;
+		margin-top: 1.4rem;
+		font-family: 'Raleway', sans-serif;
+		font-size: 1.6rem;
+	}
+	.trailbike-header-phone {
+		text-align:right;
+		margin-top: 1rem;
+		font-family: 'Raleway', sans-serif;
+		font-size: 1.4rem;
+	}
 }
+
+@media #{$large-up} {
+	.trailbike-header-tagline {
+		text-align:right;
+		margin-top: 2.2rem;
+		font-family: 'Raleway', sans-serif;
+		font-size: 2.5rem;
+	}
+	.trailbike-header-phone {
+		text-align:right;
+		margin-top: 2rem;
+		font-family: 'Raleway', sans-serif;
+		font-size: 2rem;
+	}
+}
+
+
 .header{
 	margin-bottom:none;
 }
-.home-3tours-block{
-	min-height:240px;
-	p{
-		line-height:15rem;
-	}
-	a{
-		font-size:2rem;
-		text-decoration:none;
-		color:white;
-		padding: 100px 120px;
-		/* height: 279px; */
-		/* width: 279px; */
-		background: url(../antigua-assets/island.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
-	a:hover{
-		text-decoration:none;
-		color:#ddd;
+
+@media #{$small-up}{
+	.home-3tours-block{
+		min-height:160px;
+		h1,h2,h3,h4,h5,h6 { font-family: 'Raleway', sans-serif; }
+		p { line-height:5rem; }
+		a {
+			font-size:1.8rem;
+			text-decoration:none;
+			color:white;
+			padding: 60px 72px;
+			background: url(../antigua-assets/island.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		a:hover {
+			text-decoration:none;
+			color:#ddd;
+		}
 	}
 }
+@media #{$medium-up}{
+	.home-3tours-block{
+		min-height:180px;
+		h1,h2,h3,h4,h5,h6 { font-family: 'Raleway', sans-serif; }
+		p { line-height:10rem; }
+		a {
+			font-size:1.8rem;
+			text-decoration:none;
+			color:white;
+			padding: 80px 96px;
+			background: url(../antigua-assets/island.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		a:hover {
+			text-decoration:none;
+			color:#ddd;
+		}
+	}
+}
+@media #{$large-up}{
+	.home-3tours-block{
+		min-height:200px;
+		h1,h2,h3,h4,h5,h6 { font-family: 'Raleway', sans-serif; }
+		p { line-height:15rem; }
+		a {
+			font-size:2rem;
+			text-decoration:none;
+			color:white;
+			padding: 100px 120px;
+			background: url(../antigua-assets/island.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		a:hover {
+			text-decoration:none;
+			color:#ddd;
+		}
+	}
+}
+
+
 .home-strapline{
 	font-size: 2.2rem;
 	line-height:3rem;
@@ -470,6 +580,18 @@ footer.full-width {
 
 footer.inline-list ul li {
 	list-style:none;
+}
+
+@media #{$small-up}{
+	.middle-widget-border div:nth-of-type(2){
+		border: none;
+	}
+}
+@media #{$large-up}{
+	.middle-widget-border div:nth-of-type(2){
+		border-right:1px solid white;
+		border-left: 1px solid white;
+	}
 }
 
 .social-link-facebook{
