@@ -32,7 +32,8 @@
 	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load-ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
 	<!-- Startup Image iPhone (320x460) -->
 	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load.png" media="screen and (max-device-width: 320px)" />
-
+	<!-- fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Cantarell:400,700,400italic,700italic|Quattrocento:400,700|Raleway:400,300,500,700' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 
 </head>
@@ -41,13 +42,30 @@
 
 <header class="contain-to-grid">
 	<!-- Starting the Top-Bar -->
+	<div class="row padding-top-1 padding-bottom-1">
+		<div class="small-12 large-3 columns">
+			<div class="trailbike-header-logo">
+				<img src="<?php echo get_template_directory_uri(); ?>/antigua-assets/tba-header-logo.png" alt="trail bike antigua logo" description="Trail Bike Antigua" />
+			</div>
+		</div>
+		<div class="small-12 large-9 columns text-right">
+			<div class="trailbike-header-phone">
+				01234 567890
+			</div>
+			<div class="trailbike-header-tagline">
+				<?php echo get_bloginfo ( 'description' ); ?>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="row">
 	<nav class="top-bar" data-topbar>
 	    <ul class="title-area">
-	        <li class="name">
+	        <!-- <li class="name">
 	        	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-	        </li>
+	        </li> -->
 			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
 	    </ul>
 	    <section class="top-bar-section">
 	    <?php
@@ -55,7 +73,7 @@
 	            'theme_location' => 'primary',
 	            'container' => false,
 	            'depth' => 0,
-	            'items_wrap' => '<ul class="left">%3$s</ul>',
+	            'items_wrap' => '<ul class="right">%3$s</ul>',
 	            'fallback_cb' => 'reverie_menu_fallback', // workaround to show a message to set up a menu
 	            'walker' => new reverie_walker( array(
 	                'in_top_bar' => true,
@@ -64,28 +82,12 @@
 	            ) ),
 	        ) );
 	    ?>
-	    <?php
-	    	// Uncomment the following to enable the right menu (additional menu)
-			
-	    	/*
-	        wp_nav_menu( array(
-	            'theme_location' => 'additional',
-	            'container' => false,
-	            'depth' => 0,
-	            'items_wrap' => '<ul class="right">%3$s</ul>',
-	            'walker' => new reverie_walker( array(
-	                'in_top_bar' => true,
-	                'item_type' => 'li',
-	                'menu_type' => 'main-menu'
-	            ) ),
-	        ) );
-	        */
-	    ?>
 	    </section>
 	</nav>
 	<!-- End of Top-Bar -->
-</header>
+</div>
 
 <!-- Start the main container -->
 <div class="container" role="document">
-	<div class="row">
+	<!-- <div class="row"> -->
+	<!-- this should get added to the repo -->

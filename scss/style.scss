@@ -23,9 +23,9 @@
 /* Start to customize Reverie */
 
 // add transition effect
-a, a:visited, a:hover, a:visited:hover {
+/*a, a:visited, a:hover, a:visited:hover {
 	@include transition(all 100ms linear);
-}
+}*/
 
 // add some margin for embeds in post
 figure {
@@ -350,4 +350,335 @@ footer.full-width {
 		margin-top: rem-calc(48);
 		padding-top: rem-calc(32);
 	}
+}
+/* mjw custom styles for antigua bike trails */
+
+/* colors */
+
+$grey : #f6f6f6;
+$green : #8dc63f;
+
+/* odd little helpers */
+.margin-top-1{ margin-top: 1em; }
+.padding-top-1{ padding-top: 1em; }
+.padding-bottom-1{ padding-bottom: 1em; }
+.barry-padded{ padding: 1em 1em 0 1em; } 
+.barry-padded-sides{ padding: 0 1em 0 1em; } 
+.bg-white { background-color: white; }
+.bg-grey { background: $grey; }
+.bg-green { background: $green; }
+
+.overlay{
+	position: absolute;
+	top: 1rem;
+	left: 2rem;
+	height: 100%;
+	font-size: 1.5rem;
+	background-color: rgba(36,174,221,0.5);
+	color: white;
+}
+.overlay-content{
+	padding: 2rem;
+	overflow: hidden;
+	font-size: 2rem;
+}
+
+body {
+	background-color:#fff;
+	background-image: url(../antigua-assets/bg-clouds.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	font-family: 'Raleway',sans-serif;
+}
+body > header.contain-to-grid {
+	margin-bottom:0;
+}
+.contain-to-grid {
+	background: white;
+}
+.trailbike-header-tagline {
+	margin-top: 2.2rem;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.5rem;
+}
+.trailbike-header-phone {
+	margin-top: 2rem;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2rem;
+}
+.header{
+	margin-bottom:none;
+}
+.home-3tours-block{
+	min-height:240px;
+	p{
+		line-height:15rem;
+	}
+	a{
+		font-size:2rem;
+		text-decoration:none;
+		color:white;
+		padding: 100px 120px;
+		/* height: 279px; */
+		/* width: 279px; */
+		background: url(../antigua-assets/island.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	a:hover{
+		text-decoration:none;
+		color:#ddd;
+	}
+}
+.home-strapline{
+	font-size: 2.2rem;
+	line-height:3rem;
+	padding:1rem 0 1rem 0;
+}
+.home-bottom-block{
+	margin: 2em 1em 2em 1em;
+	font-size:1.5rem;
+	line-height:2rem;
+	font-family: 'Quicksand', sans-serif;
+}
+footer.full-width {
+	background-color: #585756;	
+	border: none;
+	padding-top: 3rem;
+}
+
+footer.inline-list ul li {
+	list-style:none;
+}
+
+/* nav bar customisation */
+.top-bar{
+	background:none;
+}
+.top-bar .name h1 a {
+	color: black;
+}
+
+.top-bar-section {
+	ul li {
+		background: none;
+	}
+	li:not(.has-form) a:not(.button) {
+		background: none;
+		color:white;
+	}
+}
+
+@media only screen and (min-width: 40.063em) {
+  .top-bar {
+    background: none;
+    overflow: visible;
+  }
+  .top-bar:before, .top-bar:after {
+    content: " ";
+    display: table;
+  }
+  .top-bar:after {
+    clear: both;
+  }
+  .top-bar .toggle-topbar {
+    display: none;
+  }
+  .top-bar .title-area {
+    float: left;
+  }
+  .top-bar .name h1 a {
+    width: auto;
+  }
+  .top-bar input,
+  .top-bar .button,
+  .top-bar button {
+    font-size: 0.875rem;
+    position: relative;
+    top: 7px;
+  }
+  .top-bar.expanded {
+    background: #333333;
+  }
+
+  .contain-to-grid .top-bar {
+    max-width: 71.25rem;
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+
+  .top-bar-section {
+    transition: none 0 0;
+    left: 0 !important;
+  }
+  .top-bar-section ul {
+    width: auto;
+    height: auto !important;
+    display: inline;
+  }
+  .top-bar-section ul li {
+    float: left;
+  }
+  .top-bar-section ul li>a{
+  	font-size:0.9rem;
+  	color:white;
+  }
+  .top-bar-section ul li.active {
+    float: left;
+    background-image:url('../antigua-assets/nav-active.png');
+    background-repeat: no-repeat;
+	background-position: 50% bottom;
+	background-width:10px;
+  }
+  .top-bar-section ul li .js-generated {
+    display: none;
+  }
+  .top-bar-section li.hover > a:not(.button) {
+    background: none;
+    color: white;
+  }
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    padding: 0 15px;
+    line-height: 45px;
+    background: none;
+    text-transform:uppercase;
+  }
+  .top-bar-section li:not(.has-form) a:not(.button):hover {
+    background: none; /*image?*/
+    background-image:url('../antigua-assets/nav-active.png');
+    background-repeat: no-repeat;
+	background-position: 50% bottom;
+  }
+  .top-bar-section li.active:not(.has-form) a:not(.button) {
+    padding: 0 15px;
+    line-height: 45px;
+    color: white;
+    background: none; /*image?*/
+    background-image:url('../antigua-assets/nav-active.png');
+    background-repeat: no-repeat;
+	background-position: 50% bottom;
+	text-transform:uppercase;
+  }
+  .top-bar-section li.active:not(.has-form) a:not(.button):hover {
+    background: none; /*image?*/
+  }
+  .top-bar-section .has-dropdown > a {
+    padding-right: 35px !important;
+  }
+  .top-bar-section .has-dropdown > a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 5px;
+    border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
+    border-top-style: solid;
+    margin-top: -2.5px;
+    top: 22.5px;
+  }
+  .top-bar-section .has-dropdown.moved {
+    position: relative;
+  }
+  .top-bar-section .has-dropdown.moved > .dropdown {
+    display: block;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  .top-bar-section .has-dropdown.hover > .dropdown, .top-bar-section .has-dropdown.not-click:hover > .dropdown {
+    display: block;
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+    position: absolute !important;
+  }
+  .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
+    border: none;
+    content: "\00bb";
+    top: 1rem;
+    margin-top: -1px;
+    right: 5px;
+    line-height: 1.2;
+  }
+  .top-bar-section .dropdown {
+    left: 0;
+    top: auto;
+    background: transparent;
+    min-width: 100%;
+  }
+  .top-bar-section .dropdown li a {
+    color: white;
+    line-height: 45px;
+    white-space: nowrap;
+    padding: 12px 15px;
+    background: #333333;
+  }
+  .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+    color: white;
+    background: #333333;
+  }
+  .top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
+    color: white;
+    background: #272727;
+  }
+  .top-bar-section .dropdown li label {
+    white-space: nowrap;
+    background: #333333;
+  }
+  .top-bar-section .dropdown li .dropdown {
+    left: 100%;
+    top: 0;
+  }
+  .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    clear: none;
+    height: 45px;
+    width: 0;
+  }
+  .top-bar-section .has-form {
+    background: #333333;
+    padding: 0 15px;
+    height: 45px;
+  }
+  .top-bar-section .right li .dropdown {
+    left: auto;
+    right: 0;
+  }
+  .top-bar-section .right li .dropdown li .dropdown {
+    right: 100%;
+  }
+  .top-bar-section .left li .dropdown {
+    right: auto;
+    left: 0;
+  }
+  .top-bar-section .left li .dropdown li .dropdown {
+    left: 100%;
+  }
+
+  .no-js .top-bar-section ul li:hover > a {
+    background: #272727;
+    color: white;
+  }
+  .no-js .top-bar-section ul li:active > a {
+    background: #008cba;
+    color: white;
+  }
+  .no-js .top-bar-section .has-dropdown:hover > .dropdown {
+    display: block;
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+    position: absolute !important;
+  }
+}
+#content {
+	border: none;
 }
