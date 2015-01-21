@@ -2,6 +2,8 @@
  * This is the main stylesheet loaded by default.
  * Edit the file and have fun.
  * http://themefortress.com/reverie */
+/* mjw */
+/* colors */
 /* Start to customize Reverie */
 /*a, a:visited, a:hover, a:visited:hover {
 	@include transition(all 100ms linear);
@@ -62,10 +64,6 @@ figure.alignright.figure {
 figure.alignleft.figure {
   float: left;
   margin: 0 18px 18px 0;
-}
-
-.footer-widget {
-  background-color: #eee;
 }
 
 body > header.contain-to-grid {
@@ -292,20 +290,35 @@ ol.commentlist li section.comment a.comment-reply-link:hover, ol.commentlist li 
   font-weight: 600;
 }
 
+.footer-widget {
+  background-color: #585756;
+  border: none;
+  color: white;
+}
+.footer-widget h4, .footer-widget p {
+  color: white;
+}
+.footer-widget a {
+  color: white;
+}
+.footer-widget a:hover {
+  color: #8adaf0;
+}
+
 footer.full-width {
   background-color: #fff;
   border-top: 1px solid #ccc;
   padding-top: 3rem;
+  /*a {
+  	color: #666;
+  	font-size: rem-calc(15);
+  	&:hover, &:focus {
+  		color: $body-font-color;
+  	}
+  }*/
 }
 footer.full-width p {
   font-size: 0.875rem;
-}
-footer.full-width a {
-  color: #666;
-  font-size: 0.9375rem;
-}
-footer.full-width a:hover, footer.full-width a:focus {
-  color: #444;
 }
 footer.full-width .love-reverie {
   border-top: 1px solid #ccc;
@@ -472,6 +485,33 @@ footer.full-width {
 
 footer.inline-list ul li {
   list-style: none;
+}
+
+.social-link-facebook {
+  text-decoration: none;
+  padding: 19px 27px 19px 27px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: url(../antigua-assets/icon-facebook.png);
+  margin-right: 1rem;
+}
+
+.social-link-twitter {
+  text-decoration: none;
+  padding: 19px 27px 19px 27px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: url(../antigua-assets/icon-twitter.png);
+  margin-right: 1rem;
+}
+
+.social-link-linkedin {
+  text-decoration: none;
+  padding: 19px 27px 19px 27px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: url(../antigua-assets/icon-linkedin.png);
+  margin-right: 1rem;
 }
 
 /* nav bar customisation */

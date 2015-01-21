@@ -1,3 +1,13 @@
+SOME NOTES
+==========
+In order to use this theme, you'll need to do the following:
+* load the database from trailbike.sql in this directory
+You'll also need the following plugins:
+*Advanced Custom Fields
+*Contact Form 7
+
+###The copy below is the original Reverie notes###
+
 A Brief Introduction
 ====================
 Reverie Framework is an extremely versatile HTML5 WordPress framework based on ZURB's [Foundation](http://foundation.zurb.com), a powerful tool for building prototypes on any kind of devices. Reverie follows [HTML5 Boilerplate](http://html5boilerplate.com) standard and is [hNews microformat](https://www.readability.com/publishers/guidelines) ready. It is optimized for Search Engine while at the same time improves readability.

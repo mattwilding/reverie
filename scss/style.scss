@@ -20,6 +20,15 @@
 @import "compass/css3/border-radius";
 @import "compass/css3/transition";
 
+/* mjw */
+/* colors */
+
+$grey : #f6f6f6;
+$green : #8dc63f;
+$darkgrey : #585756;
+
+$footerlinkhover: #8adaf0;
+
 /* Start to customize Reverie */
 
 // add transition effect
@@ -90,7 +99,6 @@ figure.alignleft.figure {
 }
 
 .footer-widget {
-	background-color: #eee;
 }
 
 body > header.contain-to-grid {
@@ -290,6 +298,18 @@ ol.commentlist {
 		}
 	}
 }
+.footer-widget {
+	background-color: $darkgrey;
+	border: none;
+	color: white;
+	h4,p {
+		color:white;
+	}
+	a{ color: white; }
+	a:hover {
+		color:$footerlinkhover;
+	}
+}
 
 
 
@@ -301,13 +321,13 @@ footer.full-width {
 	p {
 		font-size: rem-calc(14);
 	}
-	a {
+	/*a {
 		color: #666;
 		font-size: rem-calc(15);
 		&:hover, &:focus {
 			color: $body-font-color;
 		}
-	}
+	}*/
 	.love-reverie {
 		border-top: 1px solid #ccc;
 		padding-top: rem-calc(24);
@@ -357,6 +377,7 @@ footer.full-width {
 
 $grey : #f6f6f6;
 $green : #8dc63f;
+$darkgrey : #585756;
 
 /* odd little helpers */
 .margin-top-1{ margin-top: 1em; }
@@ -442,13 +463,38 @@ body > header.contain-to-grid {
 	font-family: 'Quicksand', sans-serif;
 }
 footer.full-width {
-	background-color: #585756;	
+	background-color: $darkgrey;	
 	border: none;
 	padding-top: 3rem;
 }
 
 footer.inline-list ul li {
 	list-style:none;
+}
+
+.social-link-facebook{
+	text-decoration:none;
+	padding: 19px 27px 19px 27px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background: url(../antigua-assets/icon-facebook.png); 
+	margin-right:1rem;
+}
+.social-link-twitter{
+	text-decoration:none;
+	padding: 19px 27px 19px 27px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background: url(../antigua-assets/icon-twitter.png); 
+	margin-right:1rem;
+}
+.social-link-linkedin{
+	text-decoration:none;
+	padding: 19px 27px 19px 27px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background: url(../antigua-assets/icon-linkedin.png); 
+	margin-right:1rem;
 }
 
 /* nav bar customisation */
