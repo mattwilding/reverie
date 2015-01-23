@@ -76,6 +76,11 @@ if( ! function_exists( 'reverie_theme_support' ) ) {
                 'admin-preview-callback' => ''
             )
         );
+
+        // Add post thumbnail supports. if you don't already have them. http://codex.wordpress.org/Post_Thumbnails
+        add_theme_support('post-thumbnails');
+        // set_post_thumbnail_size(150, 150, false);
+        add_image_size('orbit', 2000, 1125,true);
     }
 }
 add_action('after_setup_theme', 'reverie_theme_support'); /* end Reverie theme support */
@@ -118,4 +123,6 @@ function newestposts_function($atts, $content=null){
     return $return;
 }
 add_shortcode('newestposts', 'newestposts_function');
+
+
 ?>

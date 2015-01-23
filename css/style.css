@@ -915,3 +915,14 @@ footer.inline-list ul li {
 #content {
   border: none;
 }
+
+.orbit-container .orbit-slides-container > li .orbit-caption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: white;
+  width: 30%;
+  height: 100%;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+}

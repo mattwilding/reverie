@@ -3,20 +3,46 @@
 Template Name: Routes
 
 */
-get_header(); ?>
+get_header();
 
+// $id = get_the_id();
+// $page = get_page($id);
+// echo $id;
+?>
 <!-- Row for top imag and text -->
 <div class="row bg-white">
-	<div class="small-12 large-12 columns">
-		<div class="barry-padded">
-			<img class="responsive" src="<?php echo get_template_directory_uri(); ?>/antigua-assets/home-featured.png" />
-			<div class="overlay large-5 medium-5 small-12 columns">
-				<div class="overlay-content">
-					<?php the_field( "top_block" ); ?>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="hero small-12 medium-12 large-12 columns barry-padded">
+		
+		<?php
+			$args = array('category' => 4);
+			$hero = new WP_Query($args);
+
+		    if($hero->have_posts()) :
+		?>
+		<ul class="example-orbit" data-orbit>
+		<?php
+		    while($hero->have_posts()) : $hero->the_post();
+		?>	
+			<li>
+				<?php the_post_thumbnail('orbit'); ?>
+		    	<div class="orbit-caption">
+		      	<h3><?php the_title(); ?></h3>
+		      	<?php the_excerpt(); ?>
+		    	</div>
+		  	</li>
+		<?php
+		   endwhile;
+		?>
+		</ul>
+		<?php
+		   else: 
+			endif;
+			wp_reset_postdata();
+		?>
+		
+	</div>	
+	<!-- end hero container -->
+	<!-- </div> -->
 </div>
 <div class="row barry-padded">
 	<div class="large-12 small-12 columns"><? the_field( "middle_block" );?></div>
@@ -52,13 +78,13 @@ get_header(); ?>
 <div class="bg-white contain-to-content">
 	<div class="row barry-padded-all">
 		<div class="small-12 medium-4 large-4 columns ">
-				<?php the_field( "left_column_block" ); ?>
+				<?php the_field( "left_block" ); ?>
 		</div>
 		<div class="small-12 medium-4 large-4 columns ">
-				<?php the_field( "middle_column_block" ); ?>
+				<?php the_field( "middle_block" ); ?>
 		</div>
 		<div class="small-12 medium-4 large-4 columns ">
-				<?php the_field( "right_column_block" ); ?>
+				<?php the_field( "right_block" ); ?>
 		</div>
 	</div>
 </div>
