@@ -2,11 +2,11 @@ SOME NOTES
 ==========
 ###In order to use this theme, you'll need to do the following:###
 * load the database from trailbike.sql in this directory
-*copy the uploads folder contents to wp-content
+* copy the uploads folder contents to wp-content
 
 ###You'll also need the following plugins:###
-*Advanced Custom Fields
-*Contact Form 7
+* Advanced Custom Fields
+* Contact Form 7
 
 ###admin user login for the database###
 * admin / 99%canvey
