@@ -26,8 +26,19 @@ get_header();
 			<li>
 				<?php the_post_thumbnail('orbit'); ?>
 		    	<div class="orbit-caption">
-		      	<h3><?php the_title(); ?></h3>
-		      	<?php the_excerpt(); ?>
+		    		<div class="row">
+	    				<div class="large-4 medium-12 small-12 columns">	
+					      	<h3><?php the_title(); ?></h3>
+					      	<div class="routes-first-para">
+					      		<?php the_field( "first_para" ); ?>
+					      	</div>	
+					    </div>
+					    <div class="large-8 medium-12 small-12 columns">
+					      	<div class="routes-body-text">
+					      		<?php the_field( "body_text" ); ?>
+					    	</div>
+					    </div>
+			    	</div>
 		    	</div>
 		  	</li>
 		<?php
