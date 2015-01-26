@@ -401,6 +401,7 @@ $darkgrey : #585756;
 		padding: 1rem;
 		overflow: hidden;
 		font-size: 1rem;
+		line-height:2rem;
 	}
 }
 
@@ -417,6 +418,8 @@ $darkgrey : #585756;
 		padding: 1rem;
 		overflow: hidden;
 		font-size: 1rem;
+		line-height: 2rem;
+		height:inherit;
 	}
 }
 
@@ -433,6 +436,8 @@ $darkgrey : #585756;
 		padding: 2rem;
 		overflow: hidden;
 		font-size: 2rem;
+		line-height:3rem;
+		height:inherit;
 	}
 }
 body {
@@ -878,4 +883,10 @@ footer.inline-list ul li {
 }
 .routes-body-text{
 	font-size:1.2rem;
+}
+
+.about-middle-block{
+	font-size: 1.5rem;
+	line-height: 2rem;
+	padding: 1.5em 3em 1.5em 3em;
 }

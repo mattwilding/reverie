@@ -19,7 +19,7 @@ get_header(); ?>
 	</div>
 </div>
 <div class="row barry-padded">
-	<div class="large-12 small-12 columns"><? the_field( "middle_block" );?></div>
+	<div class="large-12 small-12 columns text-center about-middle-block"><?php the_field( "middle_block" );?></div>
 </div>
 <div class="bg-green contain-to-content">
 	<div class="row barry-padded-all">

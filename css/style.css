@@ -413,6 +413,7 @@ footer.full-width .love-reverie {
     padding: 1rem;
     overflow: hidden;
     font-size: 1rem;
+    line-height: 2rem;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -429,6 +430,8 @@ footer.full-width .love-reverie {
     padding: 1rem;
     overflow: hidden;
     font-size: 1rem;
+    line-height: 2rem;
+    height: inherit;
   }
 }
 @media only screen and (min-width: 64.063em) {
@@ -445,6 +448,8 @@ footer.full-width .love-reverie {
     padding: 2rem;
     overflow: hidden;
     font-size: 2rem;
+    line-height: 3rem;
+    height: inherit;
   }
 }
 body {
@@ -946,4 +951,10 @@ footer.inline-list ul li {
 
 .routes-body-text {
   font-size: 1.2rem;
+}
+
+.about-middle-block {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1.5em 3em 1.5em 3em;
 }

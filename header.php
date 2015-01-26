@@ -46,7 +46,7 @@
 		<div class="small-12 medium-3 large-3 columns text-center">
 			<div class="trailbike-header-logo">
 				<!-- <img src="<?php echo get_template_directory_uri(); ?>/antigua-assets/tba-header-logo.png" alt="trail bike antigua logo" description="Trail Bike Antigua" /> -->
-				<img data-interchange="[<?php echo get_template_directory_uri(); ?>/antigua-assets/tba-header-logo.png, (default)], [<?php echo get_template_directory_uri(); ?>/antigua-assets/tba-header-logo-sm.png, (small)]" alt="trail bike antigua logo" description="Trail Bike Antigua" />
+				<img data-interchange="[<?php echo get_template_directory_uri(); ?>/antigua-assets/itct-header-logo.png, (default)], [<?php echo get_template_directory_uri(); ?>/antigua-assets/itct-header-logo-sm.png, (small)]" alt="trail bike antigua logo" description="Trail Bike Antigua" />
 			</div>
 		</div>
 		<div class="small-12 medium-9 large-9 columns">
